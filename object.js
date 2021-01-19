@@ -1,12 +1,13 @@
-var userOne = {
-    email: "habib@mail.com",
-    name: "habib",
-    login(){
-        console.log(this.email, "has login");
-    },
-    logout() {
-        console.log(this.email, "has logout!");
+class User {
+
+    constructor(name, email) {
+        this.name = name,
+        this.email = email
     }
 }
 
-console.log(userOne.name)
+const userOne = new User("habib", "habib@example.com");
+const userTwo = new User("rahman", "rahman@example.com");
+
+console.log(userOne);
+console.log(userTwo.name);
